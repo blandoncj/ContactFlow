@@ -1,0 +1,31 @@
+.link {
+  @apply font-semibold text-(--primary-color);
+}
+
+.link:hover {
+  @apply text-(--primary-color-hover) hover:underline transition-colors;
+}
+
+.btn {
+  @apply font-medium text-sm md:text-base py-2 px-4 border-none rounded-md;
+}
+
+.btn-primary {
+  @apply bg-(--primary-color) text-white;
+}
+
+.btn-primary:hover {
+  @apply bg-(--primary-color-hover) transition-colors;
+}
+
+.input {
+  @apply w-full flex p-3 text-sm md:text-base border border-gray-300 rounded-md;
+}
+
+.input:focus {
+  @apply outline-hidden bg-[#eaf4fc] border-(--primary-color);
+}
+
+.input.error {
+  @apply bg-[#fde8e8] border-(--error-color);
+}
